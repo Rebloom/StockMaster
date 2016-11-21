@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="3.2.0" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14B25" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="PropCard" representedClassName="PropCardEntity" syncable="YES">
+        <attribute name="buttonDesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="num" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <userInfo>
+            <entry key="name" value="道具卡片"/>
+        </userInfo>
+    </entity>
+    <entity name="SettingInfo" representedClassName="SettingInfoEntity" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <userInfo>
+            <entry key="name" value="设置信息"/>
+        </userInfo>
+    </entity>
+    <entity name="TaskInfo" representedClassName="TaskInfoEntity" syncable="YES">
+        <attribute name="buttonText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="describe" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="h5Task" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="h5Title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="h5Url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="logID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="money" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="taskIcon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taskID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <userInfo>
+            <entry key="name" value="任务信息"/>
+        </userInfo>
+    </entity>
+    <entity name="UserAsset" representedClassName="UserAssetEntity" syncable="YES">
+        <attribute name="initbaseMoney" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="positionMoney" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profitMoney" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalAsset" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usableMoney" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="withdrawMoney" optional="YES" attributeType="String" syncable="YES"/>
+        <userInfo>
+            <entry key="name" value="用户资产"/>
+        </userInfo>
+    </entity>
+    <entity name="UserInfo" representedClassName="UserInfoEntity" syncable="YES">
+        <attribute name="head" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nickname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="signature" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <userInfo>
+            <entry key="name" value="用户信息"/>
+        </userInfo>
+    </entity>
+    <elements>
+        <element name="PropCard" positionX="511" positionY="72" width="128" height="178"/>
+        <element name="SettingInfo" positionX="-54" positionY="227" width="128" height="103"/>
+        <element name="TaskInfo" positionX="333" positionY="32" width="128" height="238"/>
+        <element name="UserAsset" positionX="144" positionY="38" width="128" height="148"/>
+        <element name="UserInfo" positionX="-54" positionY="36" width="128" height="148"/>
+    </elements>
+</model>

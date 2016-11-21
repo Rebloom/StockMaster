@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4BF0487E-8067-4554-94D2-6F820C1C046F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>StockMaster</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ea60c608-3e15-4b49-a67e-4933c25526a2++379</key>
+		<string>svn://182.92.65.27/iOS2/StockMaster</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>StockMaster.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ea60c608-3e15-4b49-a67e-4933c25526a2++379</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>ea60c608-3e15-4b49-a67e-4933c25526a2++379</key>
+		<string>svn://182.92.65.27/iOS2</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>svn://182.92.65.27/iOS2/StockMaster/StockMaster.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ea60c608-3e15-4b49-a67e-4933c25526a2++379</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ea60c608-3e15-4b49-a67e-4933c25526a2++379</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Version3.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>

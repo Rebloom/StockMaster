@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="2.8" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14B25" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="SettingInfo" representedClassName="SettingInfoEntity" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TaskInfo" representedClassName="TaskInfoEntity" syncable="YES">
+        <attribute name="buttonText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="describe" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="logID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="money" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="taskID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updateTime" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="UserInfo" representedClassName="UserInfoEntity" syncable="YES">
+        <attribute name="head" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nickname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="signature" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updateTime" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="SettingInfo" positionX="-54" positionY="227" width="128" height="103"/>
+        <element name="TaskInfo" positionX="252" positionY="2" width="128" height="163"/>
+        <element name="UserInfo" positionX="-54" positionY="36" width="128" height="148"/>
+    </elements>
+</model>

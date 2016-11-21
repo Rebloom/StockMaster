@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="3.0.0" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14B25" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="DayLine" representedClassName="DayLineEntity" syncable="YES">
+        <relationship name="stockInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StockInfo" inverseName="dayLine" inverseEntity="StockInfo" syncable="YES"/>
+    </entity>
+    <entity name="HoldStock" representedClassName="HoldStockEntity" syncable="YES">
+        <attribute name="buyAmount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="buyMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currentPrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isBuyable" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="isSellable" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="profitMoney" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profitRate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sellableAmount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sellMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="tradePrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="stockInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StockInfo" syncable="YES"/>
+        <userInfo>
+            <entry key="name" value="持仓股票"/>
+        </userInfo>
+    </entity>
+    <entity name="HotPlate" representedClassName="HotPlateEntity" syncable="YES">
+        <attribute name="updateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="plateInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PlateInfo" syncable="YES"/>
+        <userInfo>
+            <entry key="name" value="热门板块"/>
+        </userInfo>
+    </entity>
+    <entity name="HotStock" representedClassName="HotStockEntity" syncable="YES">
+        <attribute name="buttonStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="reason1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reason2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="stockInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StockInfo" syncable="YES"/>
+        <userInfo>
+            <entry key="name" value="热门股票"/>
+        </userInfo>
+    </entity>
+    <entity name="IndexQuotation" representedClassName="IndexQuotationEntity" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currentPrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="exchange" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updown" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updownPrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updownRange" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MinuteLine" representedClassName="MinuteLineEntity" syncable="YES">
+        <relationship name="stockInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StockInfo" inverseName="minuteLine" inverseEntity="StockInfo" syncable="YES"/>
+    </entity>
+    <entity name="MonthLine" representedClassName="MonthLineEntity" syncable="YES">
+        <relationship name="stockInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StockInfo" inverseName="monthLine" inverseEntity="StockInfo" syncable="YES"/>
+    </entity>
+    <entity name="PlateInfo" representedClassName="PlateInfoEntity" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stockNum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="updownRange" optional="YES" attributeType="String" syncable="YES"/>
+        <userInfo>
+            <entry key="name" value="板块信息"/>
+        </userInfo>
+    </entity>
+    <entity name="RealtimeData" representedClassName="RealtimeDataEntity" syncable="YES">
+        <attribute name="buyMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="buyStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="circulateMarketValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currentPrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isHoldings" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="isSelected" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="isSetRemind" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="isTradable" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="isVendibilty" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="marketStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="priceCompare" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="priceEarningRatio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sellMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sellStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="stockFeeling" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stockFeelingAdd" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stockStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="stockTurnover" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="swingRange" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="todayMax" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="todayMin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="todayOpen" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tradeAmount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tradeVolume" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updown" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updownPrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updownRange" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updownStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="userProfitMoney" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userProfitRate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userSellableAmount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userTradeAmount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userTradePrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="yesterdayEndPrice" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="stockInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StockInfo" syncable="YES"/>
+        <userInfo>
+            <entry key="name" value="实时数据"/>
+        </userInfo>
+    </entity>
+    <entity name="SearchHistory" representedClassName="SearchHistoryEntity" syncable="YES">
+        <attribute name="updateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="stockInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StockInfo" syncable="YES"/>
+        <userInfo>
+            <entry key="name" value="股票查找历史"/>
+        </userInfo>
+    </entity>
+    <entity name="SelectStock" representedClassName="SelectStockEntity" syncable="YES">
+        <attribute name="buyMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="currentPrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isBuyable" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="isPortfolio" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="profitAmount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profitRate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="stockInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StockInfo" syncable="YES"/>
+        <userInfo>
+            <entry key="name" value="自选股票"/>
+        </userInfo>
+    </entity>
+    <entity name="StockGrade" representedClassName="StockGradeEntity" syncable="YES">
+        <attribute name="grade" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quality" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="suggest" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tendency" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="stockInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StockInfo" syncable="YES"/>
+    </entity>
+    <entity name="StockInfo" representedClassName="StockInfoEntity" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="delisted" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="exchange" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="jianpin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="listingDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pinyin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="updateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="dayLine" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="DayLine" inverseName="stockInfo" inverseEntity="DayLine" syncable="YES"/>
+        <relationship name="minuteLine" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="MinuteLine" inverseName="stockInfo" inverseEntity="MinuteLine" syncable="YES"/>
+        <relationship name="monthLine" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="MonthLine" inverseName="stockInfo" inverseEntity="MonthLine" syncable="YES"/>
+        <relationship name="weekLine" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="WeekLine" inverseName="stockInfo" inverseEntity="WeekLine" syncable="YES"/>
+        <userInfo>
+            <entry key="name" value="股票信息"/>
+        </userInfo>
+    </entity>
+    <entity name="StockPlate" representedClassName="StockPlateEntity" syncable="YES">
+        <attribute name="updateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="plateInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PlateInfo" syncable="YES"/>
+        <relationship name="stockInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StockInfo" syncable="YES"/>
+        <userInfo>
+            <entry key="name" value="所属板块"/>
+        </userInfo>
+    </entity>
+    <entity name="VersionInfo" representedClassName="VersionInfoEntity" syncable="YES">
+        <attribute name="stockInfoVersion" optional="YES" attributeType="String" defaultValueString="0" syncable="YES"/>
+        <userInfo>
+            <entry key="name" value="数据版本"/>
+        </userInfo>
+    </entity>
+    <entity name="WeekLine" representedClassName="WeekLineEntity" syncable="YES">
+        <relationship name="stockInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StockInfo" inverseName="weekLine" inverseEntity="StockInfo" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DayLine" positionX="-830" positionY="74" width="128" height="58"/>
+        <element name="HoldStock" positionX="-423" positionY="-90" width="128" height="253"/>
+        <element name="HotPlate" positionX="-162" positionY="351" width="128" height="73"/>
+        <element name="HotStock" positionX="-317" positionY="215" width="128" height="118"/>
+        <element name="IndexQuotation" positionX="-126" positionY="36" width="128" height="163"/>
+        <element name="MinuteLine" positionX="-864" positionY="146" width="128" height="58"/>
+        <element name="MonthLine" positionX="-864" positionY="218" width="128" height="58"/>
+        <element name="PlateInfo" positionX="-317" positionY="356" width="128" height="118"/>
+        <element name="RealtimeData" positionX="-686" positionY="342" width="128" height="583"/>
+        <element name="SearchHistory" positionX="-587" positionY="-72" width="128" height="73"/>
+        <element name="SelectStock" positionX="-279" positionY="-7" width="128" height="208"/>
+        <element name="StockGrade" positionX="-470" positionY="459" width="128" height="118"/>
+        <element name="StockInfo" positionX="-585" positionY="53" width="128" height="238"/>
+        <element name="StockPlate" positionX="-470" positionY="351" width="128" height="88"/>
+        <element name="VersionInfo" positionX="-828" positionY="-9" width="128" height="58"/>
+        <element name="WeekLine" positionX="-875" positionY="290" width="128" height="58"/>
+    </elements>
+</model>
